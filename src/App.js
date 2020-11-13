@@ -12,7 +12,7 @@ export default class App extends Component {
       phone: '+6285156418321',
       school: 'Universitas Internasional Batam',
       titleOfStudy: 'Computer Science',
-      class: '2018',
+      classYear: '2018',
       company: 'PT Sat Nusapersada, Tbk',
       startDate: '2018/07/17',
       endDate: '2020/07/16',
@@ -20,15 +20,30 @@ export default class App extends Component {
       jobDesc:
         'Preparing required raw material and making productuion schedule to fulfill received orders on time.',
     };
+
+    this.submitHandler = this.submitHandler.bind(this);
+  }
+  submitHandler(e) {
+    e.preventDefault();
+    this.setState({
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      school: document.getElementById('school').value,
+      titleOfStudy: document.getElementById('titleOfStudy').value,
+      classYear: document.getElementById('classYear').value,
+      company: document.getElementById('company').value,
+      startDate: document.getElementById('startDate').value,
+      endDate: document.getElementById('endDate').value,
+      position: document.getElementById('position').value,
+      jobDesc: document.getElementById('jobDesc').value,
+    });
   }
 
   render() {
-    function submitHandler() {
-      alert('good');
-    }
     return (
       <div className="d-flex">
-        <CvForm submitHandler={submitHandler} />
+        <CvForm submitHandler={this.submitHandler} />
         <CV {...this.state} />
       </div>
     );

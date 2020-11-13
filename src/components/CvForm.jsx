@@ -14,6 +14,7 @@ export default class CvForm extends Component {
               name="name"
               id="name"
               placeholder="Your full name"
+              defaultValue="Ananda Wiradharma"
               required
             />
           </div>
@@ -25,6 +26,7 @@ export default class CvForm extends Component {
               name="email"
               id="email"
               placeholder="Email address"
+              defaultValue="anandawira754@gmail.com"
               required
             />
           </div>
@@ -36,6 +38,7 @@ export default class CvForm extends Component {
               name="phone"
               id="phone"
               placeholder="Phone number"
+              defaultValue="+6285156418321"
               required
             />
           </div>
@@ -48,6 +51,7 @@ export default class CvForm extends Component {
               name="school"
               id="school"
               placeholder="School name"
+              defaultValue="Universitas Internasional Batam"
               required
             />
           </div>
@@ -59,6 +63,19 @@ export default class CvForm extends Component {
               name="titleOfStudy"
               id="titleOfStudy"
               placeholder="Ex: Computer science"
+              defaultValue="Computer Science"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="classYear">Class</label>
+            <input
+              type="number"
+              className="form-control"
+              name="classYear"
+              id="classYear"
+              placeholder="2020"
+              defaultValue="2020"
               required
             />
           </div>
@@ -71,6 +88,7 @@ export default class CvForm extends Component {
               name="company"
               id="company"
               placeholder="Company Name"
+              defaultValue="PT SAT NUSAPERSADA Tbk"
               required
             />
           </div>
@@ -83,6 +101,7 @@ export default class CvForm extends Component {
                   className="form-control"
                   name="startDate"
                   id="startDate"
+                  defaultValue="2018-07-16"
                   required
                 />
               </div>
@@ -95,6 +114,7 @@ export default class CvForm extends Component {
                   className="form-control"
                   name="endDate"
                   id="endDate"
+                  defaultValue="2020-07-15"
                   required
                 />
               </div>
@@ -108,6 +128,7 @@ export default class CvForm extends Component {
               name="position"
               id="position"
               placeholder="Job Title"
+              defaultValue="Production Planner"
               required
             />
           </div>
@@ -119,6 +140,7 @@ export default class CvForm extends Component {
               name="jobDesc"
               id="jobDesc"
               placeholder="Job Description"
+              defaultValue="Preparing required raw material and making productuion schedule to fulfill received orders on time. "
               required
             />
           </div>

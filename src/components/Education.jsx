@@ -15,7 +15,7 @@ class Education extends Component {
         </div>
         <div>
           <h6>Class</h6>
-          <p>{this.props.class}</p>
+          <p>{this.props.classYear}</p>
         </div>
       </div>
     );
